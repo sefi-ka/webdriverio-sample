@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="book_a_dream_journey_via_demo_testim_io" timestamp="2017-10-13T16:23:15" time="97.546" tests="4" failures="0" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="d29c960daa1cd31322b4d3254656735f"/>
+      <property name="suiteName" value="Book a dream journey via demo.testim.io"/>
+      <property name="capabilities" value="firefox"/>
+      <property name="file" value=".\test\homepage.js"/>
+    </properties>
+    <testcase classname="firefox.book_a_dream_journey_via_demo_testim_io" name="navigate_to_demo_testim_io" time="60.015">
+      <error message="Timeout of 60000ms exceeded. Try to reduce the run time or increase your timeout for test specs (http://webdriver.io/guide/testrunner/timeouts.html); if returning a Promise, ensure it resolves."/>
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/url - {"url":"http://demo.testim.io/"}
+]]>
+      </system-out>
+      <system-err>
+        <![CDATA[
+Error: Timeout of 60000ms exceeded. Try to reduce the run time or increase your timeout for test specs (http://webdriver.io/guide/testrunner/timeouts.html); if returning a Promise, ensure it resolves.
+    at Timeout.<anonymous> (C:\wdio-sample\node_modules\mocha\lib\runnable.js:232:19)
+    at ontimeout (timers.js:386:11)
+    at tryOnTimeout (timers.js:250:5)
+    at Timer.listOnTimeout (timers.js:214:5)
+]]>
+      </system-err>
+    </testcase>
+    <testcase classname="firefox.book_a_dream_journey_via_demo_testim_io" name="login_and_validate_that_being_logged_in" time="13.718">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/element - {"using":"css selector","value":"#app > div > header > div > div:nth-child(2) > ul > li > button"}
+RESULT: {"state":"success","sessionId":null,"hCode":492903336,"value":{},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/url - {}
+RESULT: {"state":"success","sessionId":null,"hCode":895134302,"value":{"element-6066-11e4-a52e-4f735466cecf":"e57c3ad9-ee8f-46ee-8b9e-add719b2ce51"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/element/e57c3ad9-ee8f-46ee-8b9e-add719b2ce51/click - {}
+RESULT: {"state":"success","sessionId":null,"hCode":1952948325,"value":"http://demo.testim.io/","class":"org.openqa.selenium.remote.Response","status":0}
+RESULT: {"state":"success","sessionId":null,"hCode":437746899,"value":{},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/elements - {"using":"css selector","value":"#login > div:nth-child(1) > input"}
+RESULT: {"state":"success","sessionId":null,"hCode":541931225,"value":[{"element-6066-11e4-a52e-4f735466cecf":"1a870d05-4a70-4343-b747-96495000b418"}],"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/element/1a870d05-4a70-4343-b747-96495000b418/clear - {}
+RESULT: {"state":"success","sessionId":null,"hCode":750040960,"value":{},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/element/1a870d05-4a70-4343-b747-96495000b418/value - {"value":["f","o","o","b","a","r"],"text":"foobar"}
+RESULT: {"state":"success","sessionId":null,"hCode":1993150383,"value":{},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/elements - {"using":"css selector","value":"#login > div:nth-child(2) > input"}
+RESULT: {"state":"success","sessionId":null,"hCode":1461236338,"value":[{"element-6066-11e4-a52e-4f735466cecf":"7f4f01ca-3e6e-4a21-9620-893f4ed93485"}],"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/element/7f4f01ca-3e6e-4a21-9620-893f4ed93485/clear - {}
+RESULT: {"state":"success","sessionId":null,"hCode":241519618,"value":{},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/element/7f4f01ca-3e6e-4a21-9620-893f4ed93485/value - {"value":["t","e","s","t","1","2","3"],"text":"test123"}
+RESULT: {"state":"success","sessionId":null,"hCode":180874293,"value":{},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/element - {"using":"css selector","value":"#app > div > section.Login__login___3HOEm > div > div.flexboxgrid__col-xs-6___1DhV6.Login__card-box___1pKg0 > div > nav > button.theme__button___1iKuo.LoginButton__button___1Sd3Q.theme__raised___ONZv6.LoginButton__raised___1fUxJ.theme__primary___2NhN1.LoginButton__primary___38GOe"}
+RESULT: {"state":"success","sessionId":null,"hCode":1655646384,"value":{"element-6066-11e4-a52e-4f735466cecf":"07db488e-ad5f-4109-a962-a3c5d5081928"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/element/07db488e-ad5f-4109-a962-a3c5d5081928/click - {}
+RESULT: {"state":"success","sessionId":null,"hCode":1035701321,"value":{},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/elements - {"using":"css selector","value":"#app > div > header > div > div:nth-child(2) > ul > div > button > span:nth-child(1)"}
+RESULT: {"state":"success","sessionId":null,"hCode":322440897,"value":[{"element-6066-11e4-a52e-4f735466cecf":"e7e66e5b-dae9-4ed0-8874-065c6e57ea21"}],"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/element/e7e66e5b-dae9-4ed0-8874-065c6e57ea21/text - {}
+RESULT: {"state":"success","sessionId":null,"hCode":958057493,"value":"HELLO, JOHN","class":"org.openqa.selenium.remote.Response","status":0}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="firefox.book_a_dream_journey_via_demo_testim_io" name="choose_and_book_the_dream_journey" time="3.356">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/element - {"using":"css selector","value":"#app > div > section.Hero__hero___1FDXn > div:nth-child(3) > div > div:nth-child(1) > div > div > input"}
+RESULT: {"state":"success","sessionId":null,"hCode":685958803,"value":{"element-6066-11e4-a52e-4f735466cecf":"e306db09-c347-4e47-9978-b58c8b336c0f"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/element/e306db09-c347-4e47-9978-b58c8b336c0f/click - {}
+RESULT: {"state":"success","sessionId":null,"hCode":156187923,"value":{},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/element - {"using":"xpath","value":"/html/body/div[2]/div/div[2]/section/div/div/div/span/div/div[2]/div[25]/span"}
+RESULT: {"state":"success","sessionId":null,"hCode":810945138,"value":{"element-6066-11e4-a52e-4f735466cecf":"dc5721c2-0207-484e-ac9a-a78166711e90"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/element/dc5721c2-0207-484e-ac9a-a78166711e90/click - {}
+RESULT: {"state":"success","sessionId":null,"hCode":1997627000,"value":{},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/element - {"using":"xpath","value":"/html/body/div[2]/div/div[2]/nav/button[2]"}
+RESULT: {"state":"success","sessionId":null,"hCode":88217665,"value":{"element-6066-11e4-a52e-4f735466cecf":"b1de2354-a718-488b-9c0e-2971eee321dc"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/element/b1de2354-a718-488b-9c0e-2971eee321dc/click - {}
+RESULT: {"state":"success","sessionId":null,"hCode":1297066335,"value":{},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/element - {"using":"css selector","value":"#app > div > section.Hero__hero___1FDXn > div:nth-child(3) > div > div:nth-child(2) > div > div > input"}
+RESULT: {"state":"success","sessionId":null,"hCode":1629245112,"value":{"element-6066-11e4-a52e-4f735466cecf":"dfa5309f-fb4b-40a8-886e-c3a7383c3c30"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/element/dfa5309f-fb4b-40a8-886e-c3a7383c3c30/click - {}
+RESULT: {"state":"success","sessionId":null,"hCode":1733429777,"value":{},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/element - {"using":"xpath","value":"/html/body/div[2]/div/div[2]/section/div/div/div/span/div/div[2]/div[27]/span"}
+RESULT: {"state":"success","sessionId":null,"hCode":1586032777,"value":{"element-6066-11e4-a52e-4f735466cecf":"509a6503-2ad7-4113-99c3-c3bb6af0f9e0"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/element/509a6503-2ad7-4113-99c3-c3bb6af0f9e0/click - {}
+RESULT: {"state":"success","sessionId":null,"hCode":1146155264,"value":{},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/element - {"using":"xpath","value":"/html/body/div[2]/div/div[2]/nav/button[2]"}
+RESULT: {"state":"success","sessionId":null,"hCode":269109919,"value":{"element-6066-11e4-a52e-4f735466cecf":"def7fc8c-ad3a-4732-8957-d506d99659ee"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/element/def7fc8c-ad3a-4732-8957-d506d99659ee/click - {}
+RESULT: {"state":"success","sessionId":null,"hCode":1259582934,"value":{},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/element - {"using":"css selector","value":"#app > div > section:nth-child(4) > div:nth-child(4) > div > div > div:nth-child(2) > div.theme__cardActions___1aHjq.GalleryItem__cardActions___zE_tm > button"}
+RESULT: {"state":"success","sessionId":null,"hCode":2132423459,"value":{"element-6066-11e4-a52e-4f735466cecf":"628c4a86-5a9b-46e2-a970-f1815082701c"},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/element/628c4a86-5a9b-46e2-a970-f1815082701c/click - {}
+RESULT: {"state":"success","sessionId":null,"hCode":1708936958,"value":{},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/url - {}
+RESULT: {"state":"success","sessionId":null,"hCode":1085869209,"value":"http://demo.testim.io/checkout","class":"org.openqa.selenium.remote.Response","status":0}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="firefox.book_a_dream_journey_via_demo_testim_io" name="finalize_orfer_insert_personal_details_to_form" time="20.433">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/elements - {"using":"css selector","value":"#app > div > div:nth-child(5) > section:nth-child(1) > div.flexboxgrid__row___1y_mg.flexboxgrid__center-xs___1JWon > div.theme__card___2nWQb.CustomerInfo__customer-info___3e5NH > form > div:nth-child(1) > input"}
+RESULT: {"state":"success","sessionId":null,"hCode":1269568829,"value":[{"element-6066-11e4-a52e-4f735466cecf":"2a4786f4-2c09-4561-a2c7-84f3ae29d907"}],"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/element/2a4786f4-2c09-4561-a2c7-84f3ae29d907/clear - {}
+RESULT: {"state":"success","sessionId":null,"hCode":141326960,"value":{},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/element/2a4786f4-2c09-4561-a2c7-84f3ae29d907/value - {"value":["E","l","v","i","s"," ","P","r","e","s","(3 more items)"],"text":"Elvis Presley"}
+RESULT: {"state":"success","sessionId":null,"hCode":1874961724,"value":{},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/elements - {"using":"css selector","value":"#app > div > div:nth-child(5) > section:nth-child(1) > div.flexboxgrid__row___1y_mg.flexboxgrid__center-xs___1JWon > div.theme__card___2nWQb.CustomerInfo__customer-info___3e5NH > form > div:nth-child(2) > input"}
+RESULT: {"state":"success","sessionId":null,"hCode":1333717714,"value":[{"element-6066-11e4-a52e-4f735466cecf":"ce56b550-1e00-41f0-9dcc-2503142156cf"}],"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/element/ce56b550-1e00-41f0-9dcc-2503142156cf/clear - {}
+RESULT: {"state":"success","sessionId":null,"hCode":328096216,"value":{},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/element/ce56b550-1e00-41f0-9dcc-2503142156cf/value - {"value":["E","l","v","i","s","@","g","m","a","i","(5 more items)"],"text":"Elvis@gmail.com"}
+RESULT: {"state":"success","sessionId":null,"hCode":1520120526,"value":{},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/elements - {"using":"css selector","value":"#app > div > div:nth-child(5) > section:nth-child(1) > div.flexboxgrid__row___1y_mg.flexboxgrid__center-xs___1JWon > div.theme__card___2nWQb.CustomerInfo__customer-info___3e5NH > form > div:nth-child(3) > input"}
+RESULT: {"state":"success","sessionId":null,"hCode":1841054652,"value":[{"element-6066-11e4-a52e-4f735466cecf":"dce2b2e3-17aa-4f35-8baa-04387c472d5e"}],"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/element/dce2b2e3-17aa-4f35-8baa-04387c472d5e/clear - {}
+RESULT: {"state":"success","sessionId":null,"hCode":1474377193,"value":{},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/element/dce2b2e3-17aa-4f35-8baa-04387c472d5e/value - {"value":["1","1","1","-","2","2","-","3","3","3","(1 more items)"],"text":"111-22-3333"}
+RESULT: {"state":"success","sessionId":null,"hCode":954795639,"value":{},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/elements - {"using":"css selector","value":"#app > div > div:nth-child(5) > section:nth-child(1) > div.flexboxgrid__row___1y_mg.flexboxgrid__center-xs___1JWon > div.theme__card___2nWQb.CustomerInfo__customer-info___3e5NH > form > div:nth-child(4) > input"}
+RESULT: {"state":"success","sessionId":null,"hCode":1228826835,"value":[{"element-6066-11e4-a52e-4f735466cecf":"5ea6a1f5-a8e8-4987-8d06-b06d0811c3aa"}],"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/element/5ea6a1f5-a8e8-4987-8d06-b06d0811c3aa/clear - {}
+RESULT: {"state":"success","sessionId":null,"hCode":919100531,"value":{},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c/element/5ea6a1f5-a8e8-4987-8d06-b06d0811c3aa/value - {"value":["2","1","2","5","6","7","1","2","3","4"],"text":"2125671234"}
+RESULT: {"state":"success","sessionId":null,"hCode":1762456091,"value":{},"class":"org.openqa.selenium.remote.Response","status":0}
+COMMAND: DELETE http://127.0.0.1:4444/wd/hub/session/57fc1192-d8c9-4225-bbbd-46303049d60c - {}
+RESULT: {"state":"success","sessionId":null,"hCode":1248196284,"value":{},"class":"org.openqa.selenium.remote.Response","status":0}
+]]>
+      </system-out>
+    </testcase>
+  </testsuite>
+</testsuites>
